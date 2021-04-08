@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'batmanfont';
+    src: url('./assets/BatmanFont.ttf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+body{
+    background-color: black;
+    padding: 50px;
+}
+
+*{
+    color: white;
+    font-family: batmanfont;
+}

@@ -1,0 +1,18 @@
+<div>
+<h3>
+    Press on movie to view details
+</h3>
+<ng-container class="movie" *ngFor="let movie of movies; let i = index"  >
+    <img src="assets/{{movie.path}}.jpg" width="200" height="250" routerLink="movie/{{movie.id}}"/>
+    <h3>{{movie.title}}</h3>
+    <br/>
+    <br/>
+    <br/>
+</ng-container>
+</div>
+
+
+
+
+
+

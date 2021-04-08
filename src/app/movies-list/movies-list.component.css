@@ -1,0 +1,14 @@
+.movie{
+    float:left;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+div{
+    background-image: url(../../assets/batman-logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 20px;
+}

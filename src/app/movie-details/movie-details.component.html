@@ -1,0 +1,11 @@
+<h1 id="movie-title">{{movie.title}}</h1>
+<h3 id="movie-year">{{movie.year}}</h3>
+<img id="movie-miniature" src="assets/{{movie.path}}.jpg" routerLink="movie/{{movie.id}}"/>
+<h4 id="movie-description"> {{movie.description}} </h4>
+<h3 id="movie-trailer-head"> Movie trailer </h3>
+<p id="movie-trailer">
+<iframe *ngIf="movie.id == 0" width="720" height="480"  src="https://www.youtube.com/embed/neY2xVmOfUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe *ngIf="movie.id == 1" width="720" height="480" src="https://www.youtube.com/embed/EXeTwQWrcwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe *ngIf="movie.id == 2" width="720" height="480" src="https://www.youtube.com/embed/GokKUqLcvD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<button id="back-button" (click)="back()"> back </button>
